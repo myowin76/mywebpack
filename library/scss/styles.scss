@@ -1,0 +1,57 @@
+// ********************************************************
+// INCLUDE MAIN DEPENDENCIES
+// ********************************************************
+
+@import url('https://fonts.googleapis.com/css?family=Bitter:700|Raleway:400,400i,700,700i');
+
+$fa-font-path: "~font-awesome/fonts" !default;
+@import "~font-awesome/scss/font-awesome.scss";
+
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/" !default;
+@import "./bootstrap/custom-variables";
+@import "./bootstrap/custom-bootstrap";
+
+
+
+// ********************************************************
+// INCLUDE PARTIALS
+// ********************************************************
+
+@import "partials/header";
+@import "partials/footer";
+
+
+
+// ********************************************************
+// GENERAL STYLES
+// ********************************************************
+
+hr {
+	border-bottom: 5px solid #E2E2E2;
+	margin: $grid-gutter-width 0;
+}
+
+h1, .h1 {
+	margin-bottom: $grid-gutter-width;
+	margin-top: 0;
+}
+
+h3, h4, h5 {
+	font-family: $font-family-base;
+	font-weight: bold;
+}
+
+::selection {
+    background: $text-color;
+    color: $body-bg;
+}
+
+::-moz-selection {
+    background: $text-color;
+    color: $body-bg;
+}
+
+::-webkit-selection {
+    background: $text-color;
+    color: $body-bg;
+}
